@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cities = ["Makassar", "Medan", "Jayapura", "Surabaya", "Jakarta"];
+        // ["Ujung Pandang", "Medan", "Jayapura", "Surabaya"];
+        cities.splice(0, 1, "Ujung Pandang");
+        cities.pop();
+        // for loop
+        for (let index=0; index <= cities.length; index++) {
+            console.log(cities[index]);
+        }
+        // while
+        let index = 0;
+        while (index < cities.length) {
+            console.log(cities[index]);
+            index++;
+        }
+    </script>
+</body>
+</html>
